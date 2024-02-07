@@ -1,0 +1,118 @@
+.titlesquare {
+    width: 140px;
+    height: 130px;
+    font-size: 20px;
+    background-color: #5dd4ac;
+    color: #333;
+    font-family: "Arial", sans-serif;
+    overflow: hidden;
+    margin-left: 0;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 35%;
+    }
+}
+
+ body{
+    background-color: #f8ecd9;
+ }
+
+ .top-space {
+    background-color: #f8ecd9; 
+    height: 30px; 
+}
+
+@font-face {
+    font-family: 'cake';
+    src: url('Skincake.otf') format('woff2'),
+}
+
+header {
+    background-image: url('green.jpg');
+    text-align: center;
+    padding: 50px;
+
+    p{
+        font-size: 20px;
+        color: #333;
+        font-family: monospace, sans-serif;
+    }
+
+    img{
+        width: 90px;
+        height: auto;
+    }
+}
+
+.yammi{
+    font-size: 90px;
+    color: #333;
+    font-family: "cake", sans-serif;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+.centerprofile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+} 
+
+.mytabs {
+    font-size: 20px;
+    font-family: monospace;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    height: auto;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 30px;
+    background: #e2e2e2;
+    font-weight: bold;
+}
+
+.mytabs .tab {
+    font-size: 17px;
+    width: auto;
+    padding: 50px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 30px;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+ 
